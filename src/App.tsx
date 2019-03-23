@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import Dropzone from 'react-dropzone';
 import './App.css';
 
-class App extends Component {
+interface State {
+  text: string;
+}
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: ''
-    };
-    this.onBlurOutFocus = this.onBlurOutFocus.bind(this);
-  }
+class App extends React.Component<{}, State> {
 
-  onBlurOutFocus() {
-    this.setState({ text: '' })
-  }
+  state = {
+    text: ''
+  };
 
   render() {
     return (
@@ -27,9 +22,14 @@ class App extends Component {
                placeholder="텍스트입력해랑"
                onBlur={this.onBlurOutFocus}/>
         <p>입력한 텍스트 : {this.state.text}</p>
-        </div>
+      </div>
     );
   }
+
+  onBlurOutFocus = () => {
+    this.setState({ text: '' })
+  }
+
 }
 
 export default App;
