@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 interface State {
   text: string;
@@ -8,7 +8,7 @@ interface State {
 class App extends React.Component<{}, State> {
 
   state = {
-    text: ''
+    text: ""
   };
 
   render() {
@@ -26,7 +26,7 @@ class App extends React.Component<{}, State> {
   }
 
   onBlurOutFocus = () => {
-    this.setState({ text: '' })
+    this.setState({ text: "" });
   }
 
 }
