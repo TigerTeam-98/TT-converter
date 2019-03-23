@@ -1,11 +1,23 @@
 {
-  "extends": "tslint:recommended",
-  "defaultSeverity": "error",
-  "jsRules": {},
   "rules": {
-    "semicolon": true,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "quotemark": [
+      true,
+      "double",
+      "jsx-double",
+      "avoid-escape"
+    ],
     "no-trailing-whitespace": true,
-    "quotemark": [true, "single"]
-  },
-  "rulesDirectory": []
+    "no-null-keyword": false,
+    "no-var-keyword": true,
+    "prefer-const": true
+  }
 }
