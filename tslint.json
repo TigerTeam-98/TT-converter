@@ -1,0 +1,96 @@
+{
+  "rules": {
+    "arrow-return-shorthand": true,
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": [
+      true,
+      "ignore-same-line"
+    ],
+    "function-constructor": true,
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
+    "typedef": [
+      true,
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "variable-declaration"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator"
+    ],
+    "one-line": [
+      true,
+      "check-catch",
+      "check-finally",
+      "check-else",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "lowercase-last"
+      }
+    ],
+    "promise-function-async": true,
+    "quotemark": [
+      true,
+      "double",
+      "jsx-double",
+      "avoid-escape"
+    ],
+    "await-promise":true,
+    "no-trailing-whitespace": true,
+    "no-null-keyword": false,
+    "no-var-keyword": true,
+    "no-empty-interface": true,
+    "no-internal-module": true,
+    "no-parameter-reassignment": true,
+    "no-unnecessary-type-assertion": true,
+    "no-arg":true,
+    "no-construct": true,
+    "no-eval": true,
+    "no-invalid-template-strings": true,
+    "prefer-const": true,
+    "jsdoc-format": true
+  }
+}
