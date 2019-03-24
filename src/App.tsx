@@ -1,34 +1,16 @@
 import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import * as Page from "./pages";
+import { Layout } from "./components";
 import "./App.css";
+import "antd/dist/antd.css";
 
-interface State {
-  text: string;
-}
-
-class App extends React.Component<{}, State> {
-
-  state = {
-    text: ""
-  };
-
-  render() {
-    return (
-      <div>
-        <label>입력할 텍스트 : </label>
-        <input type="text"
-               value={this.state.text}
-               onChange={(event: React.ChangeEvent<HTMLInputElement>) => this.setState({text : event.target.value})}
-               placeholder="텍스트입력해랑"
-               onBlur={this.onBlurOutFocus}/>
-        <p>입력한 텍스트 : {this.state.text}</p>
-      </div>
-    );
-  }
-
-  onBlurOutFocus = () => {
-    this.setState({ text: "" });
-  }
-
-}
-
-export default App;
+export const App = () => (
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+          <Route component={Page.Landing} />
+      </Switch>
+    </Layout>
+  </BrowserRouter>
+);
