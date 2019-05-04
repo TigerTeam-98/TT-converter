@@ -1,6 +1,6 @@
 # TT-converter
 
-This is a repository of converter that convert filename between Windows' and macOS's different encoding format.
+It converts string between Windows and macOS different encoding format. Windows uses NFC(Composed) and macOS uses NFD (Decomposed) to encode filename. You can easily convert between NFC <-> NFD filename string.
 
 ## Introduction
 
