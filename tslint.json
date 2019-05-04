@@ -44,6 +44,10 @@
         "variable-declaration": "onespace"
       }
     ],
+    "trailing-comma": [
+      true,
+      "always"
+    ],
     "whitespace": [
       true,
       "check-branch",
@@ -77,7 +81,7 @@
       "jsx-double",
       "avoid-escape"
     ],
-    "await-promise":true,
+    "await-promise": true,
     "no-trailing-whitespace": true,
     "no-null-keyword": false,
     "no-var-keyword": true,
@@ -85,7 +89,7 @@
     "no-internal-module": true,
     "no-parameter-reassignment": true,
     "no-unnecessary-type-assertion": true,
-    "no-arg":true,
+    "no-arg": true,
     "no-construct": true,
     "no-eval": true,
     "no-invalid-template-strings": true,
